@@ -9,9 +9,8 @@ AM_SILENT_RULES([yes])
 PKG_PROG_PKG_CONFIG
 
 # Checks for programs.
-AC_PROG_CC_C99
 AC_PROG_CPP
-AC_PROG_RANLIB
+CFLAGS+=" -std=c11"
 
 # Checks for libraries.
 PKG_CHECK_MODULES([GUI_RECURSION], [
